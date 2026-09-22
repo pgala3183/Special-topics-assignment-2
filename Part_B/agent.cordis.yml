@@ -1,0 +1,31 @@
+plugins:
+  # Base DeepSeek Harness core plugins
+  - "@deepseek-ai/dsh"
+  
+  # 5 Marketplace/Existing plugins configured
+  - dsh-plugin-better-sidebar:
+      position: "left"
+      theme: "dark"
+  
+  - dsh-plugin-web:
+      port: 8080
+      host: "0.0.0.0"
+  
+  - dsh-plugin-tui:
+      enabled: true
+      mode: "fullscreen"
+  
+  - dsh-plugin-pocket:
+      remoteUrl: "http://localhost:8080"
+  
+  - dsh-plugin-mirage:
+      storage: "local"
+
+  # 2 Custom plugins implemented from scratch
+  - dsh-plugin-second-brain:
+      storagePath: "./knowledge_base"
+      syncInterval: 60
+
+  - dsh-plugin-ui-dino:
+      position: "bottom-right"
+      sprite: "dino.png"

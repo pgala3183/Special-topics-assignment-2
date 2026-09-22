@@ -1,0 +1,25 @@
+{
+  "name": "special-topics-assignment-part-b",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness with Custom Plugins",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cordis dev",
+    "start": "cordis start"
+  },
+  "dependencies": {
+    "@cordisjs/core": "^3.0.0",
+    "@deepseek-ai/dsh": "^0.1.0",
+    "cordis": "^3.0.0",
+    "dsh-plugin-better-sidebar": "link:./plugins/dsh-plugin-better-sidebar",
+    "dsh-plugin-second-brain": "link:./plugins/dsh-plugin-second-brain",
+    "dsh-plugin-ui-dino": "link:./plugins/dsh-plugin-ui-dino",
+    "dsh-plugin-web": "link:./plugins/dsh-plugin-web",
+    "dsh-plugin-tui": "link:./plugins/dsh-plugin-tui",
+    "dsh-plugin-pocket": "link:./plugins/dsh-plugin-pocket",
+    "dsh-plugin-mirage": "link:./plugins/dsh-plugin-mirage"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

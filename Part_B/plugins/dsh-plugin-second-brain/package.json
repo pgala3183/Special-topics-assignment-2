@@ -1,0 +1,8 @@
+{
+  "name": "dsh-plugin-second-brain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "cordis": "^3.0.0"
+  }
+}
